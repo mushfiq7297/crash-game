@@ -72,24 +72,20 @@
                 <!-- keyboard-end -->
                 <!-- score -->
                 <div class="flex justify-between w-3/4">
-                    <button class="btn rounded-full bg-fuchsia-600 px-3">
+                    <button class="btn rounded-full bg-fuchsia-600 px-3 text-white text-2xl">
                         Life
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
-                        <span>1</span>
+                        <span id="life-count">5</span>
                     </button>
 
-                    <button class="btn rounded-full bg-purple-800 px-3">
-                        Score
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-                        <span>1</span>
+                    <button class="btn rounded-full bg-purple-800 px-3 text-white text-2xl">
+                        Score :
+        
+                        <span id="score-count">0</span>
                     </button>
                 </div>
             </div>
@@ -98,9 +94,9 @@
             <div class="bg-indigo-500 text-center space-y-6 p-4 rounded-lg">
                 <h1 class="text-8xl text-white">
                     <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span id="final-score">14</span>
                 </h1>
-                <button class="bg-white text-black rounded-3xl px-4 py-2 text-2xl font-bold">Play Again</button>
+                <button onclick="play()" class="bg-white text-black rounded-3xl px-4 py-2 text-2xl font-bold">Play Again</button>
                 <p class="text-white">Practice will make you pro</p>
             </div>
 
